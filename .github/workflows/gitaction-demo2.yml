@@ -2,7 +2,7 @@ name: GitActions-Demo2
 on: [push]
 jobs:
   GitActions-demo-jobs:
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - run: echo "job.triggered.event is ${{ github.event_name }}"
       - run: echo "job.runnings.os is ${{ runner.os }}"
